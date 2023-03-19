@@ -1,1 +1,69 @@
 @use 'assets';
+
+main{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.panel{
+    display: flex;
+    align-items: center;
+
+    &__results{
+        &-title{
+
+        }
+
+        &__circle{
+            &-title{
+
+            }
+
+            &-text{
+
+            }
+        }
+
+        &__content{
+            &-title{
+
+            }
+
+            &-text{
+
+            }
+        }
+    }
+
+    &__summary{
+        &-title{
+
+        }
+
+        &__content{
+            &__element{
+                &-img{
+
+                }
+
+                &-title{
+
+                }
+
+                &-score{
+
+                }
+
+                &-max_score{
+
+                }
+            }
+        }
+
+        &-button{
+
+        }
+    }
+}
