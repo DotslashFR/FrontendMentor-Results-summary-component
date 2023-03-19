@@ -1,3 +1,4 @@
+@use 'normalize';
 @use 'assets';
 
 main{
@@ -5,45 +6,89 @@ main{
     min-height: 100vh;
     display: grid;
     place-content: center;
+    background-color: assets.$neutral-blue;
 }
 
 .panel{
     display: flex;
     align-items: center;
-
+    max-width: 35rem;
+    max-height: 30rem;
+    background-color: assets.$neutral-white;
+    border-radius: 20px;
     &__results{
-        &-title{
+        display: flex;
+        height: 24rem;
+        flex-direction: column;
+        align-items: center;
+        background-image: assets.$gradient-background;
+        padding: 2rem 3rem 4rem 3rem;
+        border-radius: 20px;
+        color: assets.$neutral-white;
+        text-align: center;
+        justify-content: space-between;
 
+        &-title{
+            font-size: 1.5rem;
+            font-weight: 500;
+            opacity: 50%;
         }
 
         &__circle{
-            &-title{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: assets.$gradient-circle;
+            border-radius: 100px;
+            width: 8em;
+            aspect-ratio: 1/1;
 
+            &-title{
+                font-size: 3.5rem;
+                font-weight: 700;
             }
 
             &-text{
-
+                font-size: 0.8rem;
+                font-weight: 500;
+                opacity: 50%;
             }
         }
 
         &__content{
-            &-title{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
 
+            &-title{
+                font-size: 1.5rem;
+                font-weight: 700;
             }
 
             &-text{
-
+                opacity: 50%;
+                font-weight: 500;
             }
         }
     }
 
     &__summary{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
         &-title{
 
         }
 
         &__content{
             &__element{
+                display: flex;
+                flex-direction: row;
+
                 &-img{
 
                 }

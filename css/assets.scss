@@ -5,8 +5,8 @@ $primary-orange: hsl(39, 100%, 56%);
 $primary-green: hsl(166, 100%, 37%);
 $primary-blue: hsl(234, 85%, 45%);
 
-$gradient-background: linear-gradient(90deg, hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%) 100%);
-$gradient-circle: linear-gradient(90deg, hsla(256, 72%, 46%, 1) 0%, hsla(241, 72%, 46%, 0));
+$gradient-background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+$gradient-circle: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
 
 $neutral-white: hsl(0, 0%, 100%);
 $neutral-blue: hsl(221, 100%, 96%);
