@@ -124,6 +124,7 @@ fieldset {
   margin-block-end: 0;
   margin-inline-start: 0;
   margin-inline-end: 0;
+  padding-inline-start: 0;
 }
 
 body {
@@ -143,17 +144,18 @@ main {
   display: flex;
   align-items: center;
   max-width: 35rem;
-  max-height: 30rem;
   background-color: hsl(0, 0%, 100%);
   border-radius: 20px;
+  box-shadow: hsl(241, 100%, 89%) 0 10px 100px 0;
 }
 .panel__results {
   display: flex;
-  height: 24rem;
+  flex: 0 1 50%;
+  height: max-content;
+  padding: 2rem 3rem 4rem 3rem;
   flex-direction: column;
   align-items: center;
   background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-  padding: 2rem 3rem 4rem 3rem;
   border-radius: 20px;
   color: hsl(0, 0%, 100%);
   text-align: center;
@@ -196,17 +198,33 @@ main {
 .panel__results__content-text {
   opacity: 50%;
   font-weight: 500;
+  line-height: 1.25;
 }
 .panel__summary {
   display: flex;
+  flex: 0 1 50%;
   flex-direction: column;
   align-items: center;
+  height: max-content;
+  padding: 2rem 3rem 4rem 3rem;
+  justify-content: space-evenly;
+}
+.panel__summary__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: space-between;
-  height: 100%;
+  gap: 1rem;
 }
 .panel__summary__content__element {
   display: flex;
   flex-direction: row;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+.panel__summary__content__element[data-schem=reaction] {
+  color: hsl(0, 100%, 67%);
+  background-color: hsla(0, 100%, 67%, 0.1);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -13,16 +13,18 @@ main{
     display: flex;
     align-items: center;
     max-width: 35rem;
-    max-height: 30rem;
     background-color: assets.$neutral-white;
     border-radius: 20px;
+    box-shadow: assets.$neutral-lavender 0 10px 100px 0;
+
     &__results{
         display: flex;
-        height: 24rem;
+        flex: 0 1 50%;
+        height: max-content;
+        padding: 2rem 3rem 4rem 3rem;
         flex-direction: column;
         align-items: center;
         background-image: assets.$gradient-background;
-        padding: 2rem 3rem 4rem 3rem;
         border-radius: 20px;
         color: assets.$neutral-white;
         text-align: center;
@@ -70,24 +72,35 @@ main{
             &-text{
                 opacity: 50%;
                 font-weight: 500;
+                line-height: 1.25;
             }
         }
     }
 
     &__summary{
         display: flex;
+        flex: 0 1 50%;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
-        height: 100%;
+        height: max-content;
+        padding: 2rem 3rem 4rem 3rem;
+        justify-content: space-evenly;
+
         &-title{
 
         }
 
         &__content{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 1rem;
             &__element{
                 display: flex;
                 flex-direction: row;
+                border-radius: 10px;
+                padding: .5rem;
 
                 &-img{
 
@@ -103,6 +116,11 @@ main{
 
                 &-max_score{
 
+                }
+
+                &[data-schem="reaction"]{
+                    color: assets.$primary-red;
+                    background-color: hsla(0, 100%, 67%, .1);
                 }
             }
         }
