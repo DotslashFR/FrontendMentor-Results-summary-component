@@ -13,7 +13,6 @@ main {
 
 h1 {
     font-size: 2em;
-    margin: 0.67em 0;
 }
 
 hr {
@@ -117,4 +116,11 @@ button:-moz-focusring,
 
 fieldset {
     padding: 0.35em 0.75em 0.625em;
+}
+
+*{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
 }
